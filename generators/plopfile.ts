@@ -1,4 +1,6 @@
-module.exports = (plop) => {
+import { NodePlopAPI } from 'plop'
+
+const Plop = (plop: NodePlopAPI) => {
   plop.setGenerator('component', {
     description: 'Create a component',
     prompts: [
@@ -32,3 +34,5 @@ module.exports = (plop) => {
     ]
   })
 }
+
+export default Plop
