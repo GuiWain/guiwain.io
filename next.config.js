@@ -7,8 +7,5 @@ module.exports = withPWA({
     dest: 'public',
     disable: !isProduction,
     runtimeCaching
-  },
-  future: {
-    webpack5: true
   }
 })
