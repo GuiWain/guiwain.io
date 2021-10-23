@@ -2,14 +2,13 @@ module.exports = {
   features: {
     postcss: false,
   },
-  typescript: {
-    reactDocgen: 'react-docgen-typescript',
-  },
-  stories: ['../src/components/**/stories.tsx'],
-  addons: ['@storybook/addon-essentials', "@storybook/addon-links"],
-  core: {
-    builder: "webpack5",
-  },
+  "stories": [
+    "../src/components/**/stories.@(js|jsx|ts|tsx)",
+  ],
+  "addons": [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials"
+  ],
   webpackFinal: (config) => {
     config.resolve.modules.push(`${process.cwd()}/src`)
     return config
