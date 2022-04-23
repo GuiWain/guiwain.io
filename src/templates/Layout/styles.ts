@@ -9,5 +9,7 @@ export const Layout = styled.div`
     background: ${theme.colors.primaryBg};
     width: 100%;
     height: 100vh;
+
+    padding-top: 2rem;
   `}
 `
