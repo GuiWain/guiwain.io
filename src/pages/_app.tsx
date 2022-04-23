@@ -1,11 +1,15 @@
 import type { AppProps } from 'next/app'
-import { ThemeProvider } from 'styled-components'
+
 import Head from 'next/head'
 
+import { ThemeProvider } from 'styled-components'
+
 import GlobalStyles from 'styles/global'
-import theme from 'styles/theme'
+import * as t from 'styles/theme'
 
 function App({ Component, pageProps }: AppProps) {
+  const theme = t.light
+
   return (
     <ThemeProvider theme={theme}>
       <Head>

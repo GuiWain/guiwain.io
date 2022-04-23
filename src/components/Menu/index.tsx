@@ -1,9 +1,9 @@
 import * as S from './styles'
 
-const Main = () => (
+const Menu = () => (
   <S.Wrapper>
-    <h1>Main</h1>
+    <h1>Menu</h1>
   </S.Wrapper>
 )
 
-export default Main
+export default Menu

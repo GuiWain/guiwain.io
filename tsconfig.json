@@ -26,7 +26,8 @@
       "@styles/*": [
         "styles/*"
       ]
-    }
+    },
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
@@ -34,6 +35,7 @@
     "**/*.tsx"
   ],
   "exclude": [
-    "node_modules", "./src/pages/_document.tsx"
+    "node_modules",
+    "./src/pages/_document.tsx"
   ]
 }
