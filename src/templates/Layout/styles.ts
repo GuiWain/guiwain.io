@@ -11,5 +11,7 @@ export const Layout = styled.div`
     height: 100vh;
 
     padding-top: 2rem;
+
+    transition: background ${theme.transition.default};
   `}
 `
