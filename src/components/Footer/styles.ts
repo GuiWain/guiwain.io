@@ -14,7 +14,8 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     background: ${theme.colors.secondaryBg};
     box-shadow: 0px 0px 1px 0px rgba(122, 0, 65, 0.3);
-    transition: background ${theme.transition.default}, box-shadow ${theme.transition.default};
+    transition: background ${theme.transition.default},
+      box-shadow ${theme.transition.default};
 
     width: 100%;
     height: 5rem;
