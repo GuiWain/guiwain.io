@@ -23,7 +23,7 @@ const Layout = ({ children }: LayoutProps) => {
 
     if (!cookies.theme) {
       const initialTheme = 'light'
-      const ONE_MONTH = 60 * 60 * 24 * 4
+      const ONE_MONTH = 60 * 60 * 24 * 7 * 4
 
       setCookie(null, 'theme', initialTheme, {
         maxAge: ONE_MONTH
