@@ -11,7 +11,7 @@ export type MenuProps = {
 const Menu = ({ checked, getTheme }: MenuProps) => {
   const handleTheme = (value: boolean) => {
     const updatedTheme = value ? 'dark' : 'light'
-    const ONE_MONTH = 60 * 60 * 24 * 4
+    const ONE_MONTH = 60 * 60 * 24 * 7 * 4
 
     setCookie(null, 'theme', updatedTheme, {
       maxAge: ONE_MONTH
