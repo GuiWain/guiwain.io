@@ -29,7 +29,9 @@ const GlobalStyles = createGlobalStyle`
     p,
     a,
     span,
+    time,
     li,
+    svg,
     ol {
       transition: color ${theme.transition.default};
     }
