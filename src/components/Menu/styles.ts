@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import UseLink from 'next/link'
 
 import { Switch as UseSwitch } from 'antd'
-import 'antd/dist/antd.css'
+import 'antd/lib/switch/style/index.css'
 
 import { DarkMode, LightMode } from '@styled-icons/material/'
 
@@ -44,10 +44,10 @@ export const Wrapper = styled.div`
       }
 
       :focus {
-        box-shadow: 0px 0px 2px 1px rgba(122, 0, 65, 0.2);
+        box-shadow: 0rem 0rem 0.2rem 0.1rem rgba(122, 0, 65, 0.2);
 
         .ant-switch-handle:before {
-          box-shadow: inset 0px 0px 2px 1px rgba(122, 0, 65, 0.3);
+          box-shadow: inset 0rem 0rem 0.2rem 0.1rem rgba(122, 0, 65, 0.3);
         }
       }
     }
@@ -57,7 +57,7 @@ export const Wrapper = styled.div`
     }
 
     .ant-switch-checked .ant-switch-inner {
-      margin: -2px 25px 0 2px;
+      margin: 0rem 2.5rem 0rem 0.2rem;
     }
   `}
 `
@@ -72,5 +72,7 @@ export const Anchor = styled.a`
     :hover {
       color: ${theme.colors.title};
     }
+
+    cursor: pointer;
   `}
 `

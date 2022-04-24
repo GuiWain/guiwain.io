@@ -35,6 +35,8 @@ const Layout = ({ children }: LayoutProps) => {
         />
 
         {children}
+
+        <S.Footer />
       </S.Layout>
     </ThemeProvider>
   )
