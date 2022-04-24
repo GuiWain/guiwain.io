@@ -19,11 +19,17 @@ const CardPost = ({
 }: CardPostProps) => {
   return (
     <S.Wrapper>
-      <S.Title>{title}</S.Title>
+      <S.Link href="/">
+        <S.Title>{title}</S.Title>
+      </S.Link>
 
       <S.Div>
-        <S.Date>{date}</S.Date>
-        <S.ReadingTime>{reading_time} min. de leitura</S.ReadingTime>
+        <S.Date dateTime={date}>
+          <S.CalendarIcon /> {date}
+        </S.Date>
+        <S.ReadingTime>
+          <S.TimerIcon /> {reading_time} min. de leitura
+        </S.ReadingTime>
       </S.Div>
 
       <S.Description>{description}</S.Description>
