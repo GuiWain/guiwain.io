@@ -19,35 +19,42 @@ const defaultTheme = {
       xxxlarge: '3.6rem',
       huge: '4.0rem',
       xhuge: '5.6rem'
-    },
-    tags: {
-      colors: {
-        dev: '',
-        life: '',
-        travel: ''
-      }
     }
+  },
+  tags: {
+    colors: {
+      dev: '',
+      life: '',
+      travel: ''
+    }
+  },
+  transition: {
+    default: '0.3s ease-in-out'
   }
 }
 
 export const light = {
   ...defaultTheme,
+  type: 'light',
   colors: {
     title: '#7A0041',
     text: '#2D2529',
     primaryBg: '#F9F9F9',
     secondaryBg: '#ADADAD',
-    icons: '#2D2529'
+    icons: '#2D2529',
+    iconTheme: '#FFEA00'
   }
 }
 
 export const dark = {
   ...defaultTheme,
+  type: 'dark',
   colors: {
     title: '#FFD6EB',
     text: '#F9F9F9',
     primaryBg: '#2D2529',
     secondaryBg: '#E0E0E0',
-    icons: '#2D2529'
+    icons: '#2D2529',
+    iconTheme: '#8f8f8f'
   }
 }

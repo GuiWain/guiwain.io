@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> should render the Menu 1`] = `
+.c2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c3 {
+  color: #FFEA00;
+  width: 1.6rem;
+}
+
+.c0 {
+  margin: auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .ant-switch {
+  width: 4rem;
+  height: 2.2rem;
+  background-color: #2D2529;
+}
+
+.c0 .ant-switch:focus-within,
+.c0 .ant-switch:focus-visible {
+  outline: none;
+}
+
+.c0 .ant-switch:focus {
+  box-shadow: 0px 0px 2px 1px rgba(122,0,65,0.2);
+}
+
+.c0 .ant-switch:focus .ant-switch-handle:before {
+  box-shadow: inset 0px 0px 2px 1px rgba(122,0,65,0.3);
+}
+
+.c0 .ant-switch-handle:before {
+  background-color: #F9F9F9;
+}
+
+.c0 .ant-switch-checked .ant-switch-inner {
+  margin: -2px 25px 0 2px;
+}
+
+.c1 {
+  color: #2D2529;
+  font-family: Montserrat,sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+.c1:hover {
+  color: #7A0041;
+}
+
+<div
+  class="c0"
+>
+  <a
+    class="c1"
+  >
+    GuiWain
+  </a>
+  <button
+    aria-checked="true"
+    class="ant-switch ant-switch-checked"
+    role="switch"
+    type="button"
+  >
+    <div
+      class="ant-switch-handle"
+    />
+    <span
+      class="ant-switch-inner"
+    >
+      <svg
+        aria-hidden="true"
+        class="c2 c3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          fill="none"
+          height="24"
+          width="24"
+        />
+        <path
+          d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;

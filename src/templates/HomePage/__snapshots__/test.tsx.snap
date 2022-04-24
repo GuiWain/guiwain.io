@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomePage /> should render the HomePage 1`] = `
+.c0 {
+  color: #2D2529;
+  font-family: Merriweather,serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem auto 0;
+  width: 80%;
+}
+
+<div
+  class=""
+>
+  <h1
+    class="c0"
+  >
+    Quisque consectetur lacinia finibus. Pellentesque euismod risus
+  </h1>
+</div>
+`;
