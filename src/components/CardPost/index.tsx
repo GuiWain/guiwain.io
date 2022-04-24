@@ -2,7 +2,7 @@ import * as S from './styles'
 
 export type Tags = 'dev' | 'life' | 'travel'
 
-export type CardPost = {
+export type CardPostProps = {
   title: string
   description: string
   date?: string
@@ -16,7 +16,7 @@ const CardPost = ({
   date,
   reading_time,
   tags
-}: CardPost) => {
+}: CardPostProps) => {
   return (
     <S.Wrapper>
       <S.Title>{title}</S.Title>
