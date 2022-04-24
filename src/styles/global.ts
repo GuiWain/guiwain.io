@@ -28,6 +28,7 @@ const GlobalStyles = createGlobalStyle`
     h6,
     p,
     a,
+    span,
     li,
     ol {
       transition: color ${theme.transition.default};
