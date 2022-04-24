@@ -8,11 +8,11 @@ const HomePage = () => (
       Quisque consectetur lacinia finibus. Pellentesque euismod risus
     </S.Description>
 
-    {posts.map((post, index) => (
-      <S.ListPosts key={index}>
-        <S.CardPost {...post} />
-      </S.ListPosts>
-    ))}
+    <S.ListPosts>
+      {posts.map((post, index) => (
+        <S.CardPost key={index} {...post} />
+      ))}
+    </S.ListPosts>
   </S.Wrapper>
 )
 
