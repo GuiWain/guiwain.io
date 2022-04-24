@@ -1,5 +1,26 @@
 import styled, { css } from 'styled-components'
 
+import UseLink from 'next/link'
+
+import { Calendar3 } from '@styled-icons/bootstrap/'
+import { Timer } from '@styled-icons/boxicons-regular/'
+
+export const Link = styled(UseLink)``
+
+export const CalendarIcon = styled(Calendar3)`
+  ${({ theme }) => css`
+    width: 1rem;
+    color: ${theme.colors.text};
+  `}
+`
+
+export const TimerIcon = styled(Timer)`
+  ${({ theme }) => css`
+    width: 1.5rem;
+    color: ${theme.colors.text};
+  `}
+`
+
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
@@ -35,16 +56,31 @@ export const Description = styled.h3`
 export const Div = styled.div`
   display: flex;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 1.5rem;
 `
 
-export const Date = styled.span`
+export const Date = styled.time`
   ${({ theme }) => css`
     color: ${theme.colors.text};
     font-family: ${theme.font.family02};
     font-size: ${theme.font.sizes.xxxsmall};
     font-weight: ${theme.font.light};
+
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
   `}
 `
 
-export const ReadingTime = styled(Date)``
+export const ReadingTime = styled.span`
+  ${({ theme }) => css`
+    color: ${theme.colors.text};
+    font-family: ${theme.font.family02};
+    font-size: ${theme.font.sizes.xxxsmall};
+    font-weight: ${theme.font.light};
+
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  `}
+`
