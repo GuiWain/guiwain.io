@@ -1,6 +1,21 @@
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.div``
+import UseCards from 'components/CardPost'
+
+export const Wrapper = styled.div`
+  width: 90%;
+  margin: auto;
+`
+
+export const ListPosts = styled.section`
+  margin: 3rem auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+`
+
+export const CardPost = styled(UseCards)``
 
 export const Description = styled.h1`
   ${({ theme }) => css`
