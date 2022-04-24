@@ -21,7 +21,18 @@ const Layout = ({ children }: LayoutProps) => {
   useEffect(() => {
     const cookies = parseCookies()
 
-    const currentyTheme = cookies.theme ? cookies.theme : 'light'
+    if (!cookies.theme) {
+      const initialTheme = 'light'
+      const ONE_MONTH = 60 * 60 * 24 * 4
+
+      setCookie(null, 'theme', initialTheme, {
+        maxAge: ONE_MONTH
+      })
+
+      return
+    }
+
+    const currentyTheme = cookies.theme
     const updatedTheme = currentyTheme === 'light' ? t.light : t.dark
     setTheme(updatedTheme)
   }, [])
