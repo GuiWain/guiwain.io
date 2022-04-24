@@ -29,7 +29,7 @@ const defaultTheme = {
     }
   },
   transition: {
-    default: '0.3s ease-in-out'
+    default: '0.4s ease-in-out'
   }
 }
 
