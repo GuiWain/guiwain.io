@@ -20,9 +20,7 @@ export const Wrapper = styled.div`
     width: 100%;
     height: 5rem;
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-top: 7rem;
 
     :hover {
       box-shadow: 0px -1px 3px 0px rgba(122, 0, 65, 0.2);
