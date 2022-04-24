@@ -54,7 +54,6 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.4s ease-out;
 
     &::before,
     &::after {
@@ -70,9 +69,17 @@ const GlobalStyles = createGlobalStyle`
       --antd-wave-shadow-color: ${theme.colors.title};
     }
 
-    body {
-      font-family: ${theme.font.family02};
-      font-size: ${theme.font.sizes.xxsmall};
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    li,
+    ol {
+      transition: color ${theme.transition.default};
     }
   `}
 `
