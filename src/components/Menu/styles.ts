@@ -7,7 +7,7 @@ import 'antd/lib/switch/style/index.css'
 
 import { DarkMode, LightMode } from '@styled-icons/material/'
 
-export const Logo = styled(UseLink)``
+export const Link = styled(UseLink)``
 export const Switch = styled(UseSwitch)``
 
 export const LightIcon = styled(LightMode)`

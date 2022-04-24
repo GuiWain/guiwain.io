@@ -10,7 +10,7 @@ export const Layout = styled.div`
   ${({ theme }) => css`
     background: ${theme.colors.primaryBg};
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
     padding-top: 2rem;
 

@@ -1,6 +1,5 @@
 import * as S from './styles'
-
-import { parseCookies, setCookie } from 'nookies'
+import { setCookie } from 'nookies'
 
 export type Theme = 'light' | 'dark'
 
@@ -10,15 +9,9 @@ export type MenuProps = {
 }
 
 const Menu = ({ checked, getTheme }: MenuProps) => {
-  const handleTheme = () => {
-    const cookies = parseCookies()
-    const ONE_MONTH = 60 * 60 * 24 * 4
-
-    // * getting the current theme
-    const currentyTheme = cookies.theme ? cookies.theme : 'light'
-
-    // * reversing the themes
-    const updatedTheme = currentyTheme === 'light' ? 'dark' : 'light'
+  const handleTheme = (value: boolean) => {
+    const updatedTheme = value ? 'dark' : 'light'
+    const ONE_MONTH = 60 * 60 * 24 * 7 * 4
 
     setCookie(null, 'theme', updatedTheme, {
       maxAge: ONE_MONTH
@@ -29,14 +22,14 @@ const Menu = ({ checked, getTheme }: MenuProps) => {
 
   return (
     <S.Wrapper>
-      <S.Logo href="/">
+      <S.Link href="/">
         <S.Anchor>GuiWain</S.Anchor>
-      </S.Logo>
+      </S.Link>
 
       <S.Switch
         checkedChildren={<S.DarkIcon />}
         unCheckedChildren={<S.LightIcon />}
-        onChange={handleTheme}
+        onChange={(isChecked) => handleTheme(isChecked)}
         checked={checked}
       />
     </S.Wrapper>

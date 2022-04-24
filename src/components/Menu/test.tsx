@@ -22,7 +22,7 @@ describe('<Menu />', () => {
     userEvent.click(buttonSwitch)
 
     await waitFor(() => {
-      expect(mockArgs.getTheme).toBeCalledWith('dark')
+      expect(mockArgs.getTheme).toBeCalledWith('light')
     })
   })
 })
