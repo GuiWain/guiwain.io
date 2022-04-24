@@ -41,6 +41,7 @@ export const light = {
     text: '#2D2529',
     primaryBg: '#F9F9F9',
     secondaryBg: '#ADADAD',
+    secondaryVariation: '#5a4952',
     icons: '#2D2529',
     iconTheme: '#FFEA00'
   }
@@ -54,6 +55,7 @@ export const dark = {
     text: '#F9F9F9',
     primaryBg: '#2D2529',
     secondaryBg: '#E0E0E0',
+    secondaryVariation: '#5a4952',
     icons: '#2D2529',
     iconTheme: '#8f8f8f'
   }
