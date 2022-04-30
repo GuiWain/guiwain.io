@@ -1,12 +1,12 @@
-import { Story, Meta } from '@storybook/react'
-import Menu, { MenuProps } from '.'
+import { ComponentMeta, ComponentStory } from '@storybook/react'
+import Menu from '.'
 
 export default {
   title: 'Components/Menu',
   component: Menu
-} as Meta
+} as ComponentMeta<typeof Menu>
 
-export const Default: Story<MenuProps> = (args) => <Menu {...args} />
+export const Default: ComponentStory<typeof Menu> = (args) => <Menu {...args} />
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
 const handleTheme = () => {}

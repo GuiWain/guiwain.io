@@ -1,14 +1,17 @@
-import { Story, Meta } from '@storybook/react'
-import CardPost, { CardPostProps } from '.'
+import { ComponentMeta, ComponentStory } from '@storybook/react'
+
+import CardPost from '.'
 
 import { Tags } from 'components/CardPost'
 
 export default {
   title: 'Components/CardPost',
   component: CardPost
-} as Meta
+} as ComponentMeta<typeof CardPost>
 
-export const Default: Story<CardPostProps> = (args) => <CardPost {...args} />
+export const Default: ComponentStory<typeof CardPost> = (args) => (
+  <CardPost {...args} />
+)
 
 Default.args = {
   title: 'Nullam in nisl eget tellus bibendum.',
