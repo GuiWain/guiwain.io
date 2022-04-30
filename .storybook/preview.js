@@ -1,28 +1,22 @@
 import { ThemeProvider } from 'styled-components'
-import GlobalStyles from '../src/styles/global'
-import theme from '../src/styles/theme'
+import { useDarkMode } from 'storybook-dark-mode'
 
-export const parameters = {
-  backgrounds: {
-    default: 'zerometer-light',
-    values: [
-      {
-        name: 'zerometer-light',
-        value: theme.colors.white
-      },
-      {
-        name: 'zerometer-dark',
-        value: theme.colors.mainBg
-      }
-    ]
-  }
+import GlobalStyles from '../src/styles/global'
+import { light, dark } from '../src/styles/theme'
+
+const ThemeWrapper = (props) => {
+  return (
+    <ThemeProvider theme={useDarkMode() ? dark : light}>
+      {props.children}
+    </ThemeProvider>
+  )
 }
 
 export const decorators = [
-  (Story) => (
-    <ThemeProvider theme={theme}>
+  (renderStory) => (
+    <ThemeWrapper>
       <GlobalStyles />
-      <Story />
-    </ThemeProvider>
+      {renderStory()}
+    </ThemeWrapper>
   )
 ]
