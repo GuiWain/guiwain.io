@@ -9,7 +9,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Next App</title>
+        <title>GuiWain</title>
         <link rel="manifest" href="/manifest.json" />
         <meta name="description" content="" />
       </Head>
