@@ -22,11 +22,9 @@ export const TimerIcon = styled(Timer)`
 `
 
 export const Wrapper = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-  `}
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
 `
 
 export const Title = styled.h2`
