@@ -20,6 +20,11 @@ const GlobalStyles = createGlobalStyle`
       --antd-wave-shadow-color: ${theme.colors.title};
     }
 
+    body {
+      background-color: ${theme.colors.primaryBg};
+      transition: background-color ${theme.transition.default};
+    }
+
     h1,
     h2,
     h3,
@@ -30,8 +35,20 @@ const GlobalStyles = createGlobalStyle`
     a,
     span,
     time,
-    li,
     svg,
+    figcaption,
+    b,
+    i,
+    em,
+    strong,
+    small,
+    del,
+    sup,
+    sub,
+    mark,
+    ul,
+    li,
+    td,
     ol {
       transition: color ${theme.transition.default};
     }
