@@ -50,6 +50,9 @@ export const Description = styled.h3`
     font-family: ${theme.font.family02};
     font-size: ${theme.font.sizes.xsmall};
     font-weight: ${theme.font.regular};
+
+    line-height: 2.5rem;
+    letter-spacing: 0.025rem;
   `}
 `
 
