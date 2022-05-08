@@ -5,6 +5,7 @@ export type Tags = 'dev' | 'life' | 'travel'
 export type CardPostProps = {
   title: string
   description: string
+  slug: string
   date?: string
   reading_time: number
   tags?: Tags[]
@@ -15,11 +16,11 @@ const CardPost = ({
   description,
   date,
   reading_time,
-  tags
+  slug
 }: CardPostProps) => {
   return (
     <S.Wrapper>
-      <S.Link href="/">
+      <S.Link href={`/posts/${slug}`}>
         <S.Title>{title}</S.Title>
       </S.Link>
 
