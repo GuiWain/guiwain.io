@@ -6,4 +6,18 @@ export default {
   component: Footer
 } as ComponentMeta<typeof Footer>
 
-export const Default: ComponentStory<typeof Footer> = () => <Footer />
+export const Default: ComponentStory<typeof Footer> = (args) => (
+  <Footer {...args} />
+)
+
+Default.args = {
+  modifier: 'default'
+}
+
+export const Minimal: ComponentStory<typeof Footer> = (args) => (
+  <Footer {...args} />
+)
+
+Minimal.args = {
+  modifier: 'minimal'
+}
