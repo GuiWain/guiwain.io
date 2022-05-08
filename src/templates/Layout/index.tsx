@@ -3,14 +3,17 @@ import * as t from 'styles/theme'
 
 import { parseCookies, setCookie } from 'nookies'
 import { ThemeProvider } from 'styled-components'
-import { Theme } from 'components/Menu'
 import { useEffect, useState } from 'react'
+
+import { Theme } from 'components/Menu'
+import { FooterModifiers } from 'components/Footer'
 
 export type LayoutProps = {
   children: JSX.Element
+  footer?: FooterModifiers
 }
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children, footer = 'default' }: LayoutProps) => {
   const [theme, setTheme] = useState(t.light)
 
   const handleTheme = (theme: Theme) => {
@@ -47,7 +50,7 @@ const Layout = ({ children }: LayoutProps) => {
 
         {children}
 
-        <S.Footer />
+        <S.Footer modifier={footer} />
       </S.Layout>
     </ThemeProvider>
   )

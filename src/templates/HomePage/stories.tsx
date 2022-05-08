@@ -1,9 +1,9 @@
-import { Story, Meta } from '@storybook/react'
+import { ComponentMeta, ComponentStory } from '@storybook/react'
 import HomePage from '.'
 
 export default {
   title: 'Components/HomePage',
   component: HomePage
-} as Meta
+} as ComponentMeta<typeof HomePage>
 
-export const Default: Story = () => <HomePage />
+export const Default: ComponentStory<typeof HomePage> = () => <HomePage />

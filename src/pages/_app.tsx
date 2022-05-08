@@ -6,15 +6,17 @@ import GlobalStyles from 'styles/global'
 import Layout from 'templates/Layout'
 
 function App({ Component, pageProps }: AppProps) {
+  const footerModifier = pageProps?.footer ? 'minimal' : 'default'
+
   return (
     <>
       <Head>
-        <title>Next App</title>
+        <title>GuiWain</title>
         <link rel="manifest" href="/manifest.json" />
         <meta name="description" content="" />
       </Head>
 
-      <Layout>
+      <Layout footer={footerModifier}>
         <>
           <GlobalStyles />
           <Component {...pageProps} />

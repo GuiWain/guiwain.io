@@ -8,11 +8,14 @@ const defaultTheme = {
     extraBold: 800,
     black: 900,
     sizes: {
+      xlittle: '0.8rem',
+      little: '1.0rem',
       xxxsmall: '1.2rem',
       xxsmall: '1.4rem',
       xsmall: '1.6rem',
       small: '1.8rem',
       medium: '2.0rem',
+      xmedium: '2.2rem',
       large: '2.4rem',
       xlarge: '2.8rem',
       xxlarge: '3.2rem',
@@ -40,7 +43,7 @@ export const light = {
     title: '#7A0041',
     text: '#2D2529',
     primaryBg: '#F9F9F9',
-    secondaryBg: '#ADADAD',
+    secondaryBg: '#d6d6d6',
     secondaryVariation: '#5a4952',
     icons: '#2D2529',
     iconTheme: '#FFEA00'

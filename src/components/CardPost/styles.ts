@@ -22,11 +22,9 @@ export const TimerIcon = styled(Timer)`
 `
 
 export const Wrapper = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-  `}
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
 `
 
 export const Title = styled.h2`
@@ -50,6 +48,9 @@ export const Description = styled.h3`
     font-family: ${theme.font.family02};
     font-size: ${theme.font.sizes.xsmall};
     font-weight: ${theme.font.regular};
+
+    line-height: 2.5rem;
+    letter-spacing: 0.025rem;
   `}
 `
 
