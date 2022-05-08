@@ -6,6 +6,8 @@ import GlobalStyles from 'styles/global'
 import Layout from 'templates/Layout'
 
 function App({ Component, pageProps }: AppProps) {
+  const footerModifier = pageProps?.footer ? 'minimal' : 'default'
+
   return (
     <>
       <Head>
@@ -14,7 +16,7 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="" />
       </Head>
 
-      <Layout>
+      <Layout footer={footerModifier}>
         <>
           <GlobalStyles />
           <Component {...pageProps} />
